@@ -51,6 +51,7 @@ import (
 	"github.com/trezor/blockbook/bchain/coins/vertcoin"
 	"github.com/trezor/blockbook/bchain/coins/viacoin"
 	"github.com/trezor/blockbook/bchain/coins/vipstarcoin"
+	"github.com/trezor/blockbook/bchain/coins/yec"
 	"github.com/trezor/blockbook/bchain/coins/zec"
 	"github.com/trezor/blockbook/common"
 )
@@ -67,6 +68,8 @@ func init() {
 	BlockChainFactories["Regtest"] = btc.NewBitcoinRPC
 	BlockChainFactories["Zcash"] = zec.NewZCashRPC
 	BlockChainFactories["Zcash Testnet"] = zec.NewZCashRPC
+	BlockChainFactories["Ycash"] = yec.NewYCashRPC
+	BlockChainFactories["Ycash Testnet"] = yec.NewYCashRPC
 	BlockChainFactories["Ethereum"] = eth.NewEthereumRPC
 	BlockChainFactories["Ethereum Classic"] = eth.NewEthereumRPC
 	BlockChainFactories["Ethereum Testnet Ropsten"] = eth.NewEthereumRPC
